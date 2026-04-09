@@ -52,20 +52,20 @@ By the final review, this README should clearly show:
 # 1. Team Identity
 
 ## 1.1 Studio / Group Name
-`[Enter your group name]`
+Suksha and Khushi
 
 ## 1.2 Team Members
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Student 1]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `[Student 2]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `[Khushi]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `[Suksha]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
 
 ## 1.3 Project Title
-`[Enter the title of your project]`
+`[Pull pin game]`
 
 ## 1.4 One-Line Pitch
-`[Describe your project in one sentence]`
+`[A game where you have to drop coins through a maze by testing you reaction time]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -75,7 +75,9 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[Write here]`
+`[A game with several pins that need to pulled out using a web interface to make a coin/ several coins together go through and obstacle course down the correct shoot into the bucket which measures weight
+It creates a fun and adrenaline filled game of chance.
+It is based partially on chance and partially on reflexes, the time sensitivity,   ]`
 
 ---
 
@@ -120,7 +122,7 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `[Toy / Board game / App / Video / Website / Object]` | `[[(https://poki.com/en/g/how-to-loot-pin-pull)]` | `[What did you learn or borrow?]` |
 | `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
 | `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
 
@@ -151,9 +153,9 @@ Examples:
 | Question | Response |
 |---|---|
 | Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
+| Age range | `[9+]` |
 | Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
+| Expected duration of one round | `[2-5 minutes]` |
 | What should the player feel? | `[Write here]` |
 | Is explanation required before use? | `[Write here]` |
 
