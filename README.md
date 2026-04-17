@@ -176,7 +176,7 @@ If your project is a game, list the rules clearly.
 - `[Rule 1]`
 - `[Rule 2]`
 - `[Rule 3]`
-- `[Rule 4]`
+- `[win]`
 
 ---
 
