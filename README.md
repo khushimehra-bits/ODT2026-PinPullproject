@@ -58,8 +58,8 @@ Suksha and Khushi
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Khushi]` | `[Electronics / App / Fabrication / Mechanics]` | `[making the physical setup and app]` | `[Physical build of the setup and mechanics]` |
-| `[Suksha]` | `[Electronics / Coding]` | `[Coding and electronics]` | `[Coding prowess and troubleshooting]` |
+| `[Khushi]` | `[Electronics / App / Fabrication / Mechanics]` | `[coding]` | `[Physical build of the setup and mechanics]` |
+| `[Suksha]` | `[Electronics / Coding]` | `[ app and setup]` | `[Coding prowess and troubleshooting]` |
 
 ## 1.3 Project Title
 `[Pull pin game]`
