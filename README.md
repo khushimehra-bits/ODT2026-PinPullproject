@@ -123,8 +123,8 @@ List what inspired the project.
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
 | `[Toy /App/ Website]` | `[[(https://poki.com/en/g/how-to-loot-pin-pull)]` | `[What did you learn or borrow?]` |
-| `[Toy / Game] '|['Coin pusher arcade machines	The idea of using coins, physical reward systems, and repeatable play for engagement.]'|
-|  '[Object]' | '[System	Servo-based mechanisms]' |	'[Using controlled mechanical movement to create precise, repeatable interactions.]` |
+| `[Toy / Game]' |  '['Coin pusher arcade machines].	'[The idea of using coins, physical reward systems, and repeatable play for engagement.]'|
+|  '[Object]' | '[Servo-based mechanisms]' | '[Using controlled mechanical movement to create precise, repeatable interactions.]` |
 
 ## 3.2 Original Twist
 What makes your project original?
@@ -194,14 +194,14 @@ Your project will be considered complete only if these conditions are met.
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+`[The smallest version of the project includes one servo-controlled pin, a basic app with one button to trigger it, and a simple mechanism to release coins. The core experience is achieved if pressing the button causes a visible mechanical action and produces a satisfying, repeatable interaction.]`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
-- `[Stretch feature 3]`
+- `[Lightfeedback from neopixel]`
+- `[Ultrasonic sensor to detect win]`
+- `[App instead of physical buttons]`
 
 ---
 
@@ -234,13 +234,13 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`[Write here]`
+`[The system is controlled through a mobile app that acts as the main input, where each button press sends a signal over WiFi to the ESP32. The ESP32 processes these signals and triggers the corresponding servo motors to pull pins and release coins. An ultrasonic sensor continuously monitors the system to detect when enough coins reach the target area, acting as a win condition. Based on this, the system processes whether the game is ongoing or completed. Outputs include the physical movement of servos, coins falling through the structure, and visual feedback through NeoPixel LEDs that animate during gameplay and celebrate when the player wins. The physical structure consists of a frame holding the pins, servo mechanisms, coin pathways, and a collection area, creating a tangible and interactive game controlled digitally through the app.]`
 
 ## 6.3 Input / Output Map
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
+| `[ App Input]` | Input | `[Sends]` |
 | `[ESP32 / Controller]` | Processing | `[Describe]` |
 | `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
 | `[Mechanical Assembly]` | Physical Action | `[Describe]` |
