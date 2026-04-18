@@ -712,12 +712,13 @@ Example:
 Describe the final version of your project.
 
 **Response:**  
-`[Write here]`
+`[The final project is an interactive, app-controlled coin-release game that combines digital input with physical mechanics. A mobile app connects to the ESP32 via WiFi, allowing users to press buttons that trigger servo motors. Each servo pulls a pin using a thread-based mechanism, releasing coins into the system. The coins travel through a layered wooden and acrylic structure into a collection area. An ultrasonic sensor detects when enough coins reach the target, triggering a win condition. Throughout gameplay, a NeoPixel ring provides dynamic visual feedback, including continuous animations and a celebratory sequence upon winning. A continuously moving servo adds an additional layer of motion, making the system feel more alive and engaging.]`
 
 ## 18.2 What Works Well
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+`[Reliable WiFi communication between the app and ESP32 for real-time control]
+[Smooth and responsive servo-triggered pin mechanism for coin release]
+[Engaging visual feedback through NeoPixel animations and win celebration]`
+
 
 ## 18.3 What Still Needs Improvement
 - `[Point 1]`
@@ -728,7 +729,7 @@ Describe the final version of your project.
 How did the project change from the initial idea?
 
 **Response:**  
-`[Write here]`
+`[We had planned to use a lead sensor that did not work out and was replaced by an ultrasonic sensor. A few of the placement of the obstacles changed.]`
 
 ---
 
