@@ -373,8 +373,6 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform | Purpose |
 |---|---|
-| `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `[Purpose]` |
-| `[Tool]` | `[Purpose]` |
 | Micropython code | Used to create a code to connect ESP32, PSU, servos, neopixel, ultrasonic sensor and record its functions |
 | MIT App inventor | Used to make interface for pressing the buttons required to move the pull pins |
 | Laser cutting software tool | Used to make the hardware intricate parts by laser cutting acrylic sheets |
