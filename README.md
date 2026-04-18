@@ -77,7 +77,7 @@ In 1–2 paragraphs, explain:
 **Response:**  
 `[A game with several pins that need to pulled out using a web interface to make a coin/ several coins together go through and obstacle course down the correct shoot into the bucket which holds an ultra sonic sensor.
 It creates a fun and adrenaline filled game of chance.
-It is based partially on chance and partially on reflexes, the time sensitivity,   ]`
+It is based partially on chance and partially on reflexes, the time sensitivity, and planning. ]`
 
 ---
 
@@ -111,7 +111,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[e are designing this project as if we are a small creative studio making an interactive game for a mixed audience of classmates and exhibition visitors, focusing on creating a playful, engaging, and easy-to-understand experience that invites quick participation and repeat interaction.]`
+`[We are designing this project as if we are a small creative studio making an interactive game for a mixed audience of classmates and exhibition visitors, focusing on creating a playful, engaging, and easy-to-understand experience that invites quick participation and repeat interaction.]`
 
 ---
 
@@ -185,11 +185,11 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[App successfully connects to the ESP32 via WiFi]
-- [ ]  '[Each button correctly triggers its corresponding servo]
-- [ ]  [Pins release coins reliably without jamming]
-- [ ]   [System detects a win condition using the sensor]
-- [ ]   [Visual feedback (NeoPixel lights) responds to gameplay]
+- [YES] `[App successfully connects to the ESP32 via WiFi]
+- [YES]  '[Each button correctly triggers its corresponding servo]
+- [YES]  [Pins release coins reliably without jamming]
+- [YES]   [System detects a win condition using the sensor]
+- [YES]   [Visual feedback (NeoPixel lights) responds to gameplay]
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
@@ -199,7 +199,7 @@ What is the smallest version of this project that still delivers the core experi
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Lightfeedback from neopixel]`
+- `[Lightfeedback from Neopixel]`
 - `[Ultrasonic sensor to detect win]`
 - `[App instead of physical buttons]`
 
@@ -217,10 +217,10 @@ Check all that apply.
 - [ ] Motorized
 - [ ] Sound-based
 - [ ] Light-based
-- [ ] Screen/UI-based
+- [YES] Screen/UI-based
 - [ ] Fabricated structure
 - [YES] Game logic based
-- [ ] Installation / tabletop experience
+- [YES] Installation / tabletop experience
 - [ ] Other: `[Write here]`
 
 ## 6.2 High-Level System Description
@@ -291,14 +291,14 @@ Check all that apply.
 - [ ] Gears
 - [YES] Pulleys
 - [ ] Belt drives
-- [ ] Linkages
+- [YES] Linkages
 - [ ] Hinges
 - [ ] Shafts
 - [ ] Springs
 - [ ] Bearings
 - [ ] Wheels
 - [YES] Sliders
-- [ ] Levers
+- [YES] Levers
 - [ ] Not applicable
 
 ## 8.2 Mechanical Description
@@ -343,13 +343,13 @@ What changed after the CAD, animation, or simulation stage?
 | `[ESP32]` | `1` | `[Main controller]` |
 | `[Servo]` | `[6]` | `[control the obstacles of the game]` |
 | `[Ultra sonic sensor]` | `[1]` | `[senses the coins falling in the winning slot and sends a signal to the neopixel]` |
-| `[neopixel]` | `[1]` | `[Remains red until it recieves the signal from the ultra sonic and then turns green and after that a gradient in celebration ]` |
+| `[Neopixel]` | `[1]` | `[Remains red until it recieves the signal from the ultra sonic and then turns green and after that a gradient in celebration ]` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
 
 **Response:**  
-`[Write here]`
+`[In concurrence with the code - the wiring of 5 of the sercos will be on GPIOs 22, 4, 5, 18 and 19. The GNDs of these servos will be connected to PSU GND. The 6th servo which is the continous sweep servo will be connected to GPIO 21 and the GND will be connected to PSU GND. PSU GND will be connected to the ESP 32's GND so that both grounds are connected. All red cables of teh servos go to the 5V power unit and the yellow wires go to the GPIO pins while all the black wires of the servos go to GND. Then, the ultrasonic sensor will be connected via jumper cables. TRIG and ECHO will be connected to GPIO pins 32 (Pin.OUT) and 33 (Pin.IN) respectively. GND of the sensor will again go to PSU GND and VCC will go to 5V power. The NeoPixel will be connected to the GPIO pin 13 and the red and black wires will go to power and GND respectively. The placement of these can be toggled/shifted with jumper cables - but this is the essence of the wiring in our project.]`
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
@@ -361,10 +361,10 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Question | Response |
 |---|---|
-| Power source | `[USB / battery / adapter / other]` |
-| Voltage required | `[Write here]` |
-| Current concerns | `[Write here]` |
-| Safety concerns | `[Write here]` |
+| Power source | `[Power Supply Unit - connected to the adapter]` |
+| Voltage required | `[5V]` |
+| Current concerns | `[There was concern that the current passing through the circuit would not be enough to power 6 servos, the neopixel and the sensor, but that concern was resolved through the trials]` |
+| Safety concerns | `[We were concerned that the PSU migth over heat and burn - which did happen once - but then we found out how to manage the current in the circuit well enough that all the components are powered and it is safe to work around.]` |
 
 ---
 
@@ -395,7 +395,7 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[Write here]`
+`[The startuo starts with all the servos excpet the continous sweep servo in rest position. The continous sweep servo moves continously 125 degrees back and forth - this is to increase the difficulty of the game. The neopixel is also on during startup - it powers a red light going round and round the neopixel - it loops until the winner is decided. As shown in the flowchart, the initialization of the app also happens during runtime. Once the app is ready, the buttons correspond to the servos to be moved. The buttons are pressed to make the coins move in the path the player intends. The buttons cannot be pressed more than once - demanding higher awareness and planning from the player. Each time a button is pressed, the corresponding servo moves 90 degrees and pulls the pin attatched to it making the coins fall into a path. The Ultrasonic sensor senses coins as they fall into the path that determines if the player wins the game or not. As soon as the sensor senses coins falling into that path, it makes the neopixel change from red to flash green twice to signal the win and then it transforms into celbratory colors for a while and then resets the game. The reset means that the runtime is over and for the game to be played again, the code needs to be run again.]`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -416,7 +416,204 @@ Suggested sequence:
 ## 10.4 Pseudocode
 
 ```text
-[Write your pseudocode here]
+[Somewhere during the project experimentation, we wanted to experiment with a load cell and map out the wins based on the amount/weight of the coins that landed on the load cell platform - but all our load cell hardware was faulty and due to unvailability of a replacement, we decidede to go ahead with our initial idea of using a ultrasonic sensor to give the win feedback to the player.
+- This is the code we are using with the Ultrasonic sensor, the neopixel and all 6 servos:
+
+from applink import AppInventorLink
+from machine import Pin, PWM, time_pulse_us
+from neopixel import NeoPixel
+import time
+import random
+
+#App link
+app = AppInventorLink()
+
+# Servoss
+SERVO_MIN_DUTY = 26
+SERVO_MAX_DUTY = 128
+
+servo_pins = [22, 4, 5, 18, 19]
+servos = [PWM(Pin(p), freq=50) for p in servo_pins]
+
+servo6 = PWM(Pin(21), freq=50)  # continuous sweep
+
+def set_angle(servo, angle):
+    duty = int(SERVO_MIN_DUTY + (angle / 180.0) * (SERVO_MAX_DUTY - SERVO_MIN_DUTY))
+    servo.duty(duty)
+
+# continuous servo control
+CONT_STOP = 77
+CONT_FWD  = 90
+CONT_REV  = 64
+
+def set_continuous(speed):
+    servo6.duty(speed)
+
+# Initialize servos
+for s in servos:
+    set_angle(s, 0)
+
+set_continuous(CONT_STOP)
+
+# ultrasonic sensor
+trig = Pin(32, Pin.OUT)
+echo = Pin(33, Pin.IN)
+
+def get_distance():
+    trig.value(0)
+    time.sleep_us(2)
+    trig.value(1)
+    time.sleep_us(10)
+    trig.value(0)
+
+    duration = time_pulse_us(echo, 1, 30000)
+    if duration < 0:
+        return None
+
+    return (duration * 0.0343) / 2
+
+WIN_DISTANCE = 10
+
+# neopixell (my fav)
+np = NeoPixel(Pin(13), 16)
+current_led = 0
+
+def clear():
+    for i in range(16):
+        np[i] = (0, 0, 0)
+
+def rotating_red():
+    global current_led
+    clear()
+    np[current_led] = (255, 0, 0)
+    np[(current_led - 1) % 16] = (120, 0, 0)
+    np[(current_led - 2) % 16] = (40, 0, 0)
+    np.write()
+    current_led = (current_led + 1) % 16
+
+def celebrate():
+    for _ in range(2):
+        for i in range(16):
+            np[i] = (0, 255, 0)
+        np.write()
+        time.sleep_ms(200)
+        clear()
+        np.write()
+        time.sleep_ms(200)
+
+    for _ in range(40):
+        for i in range(16):
+            np[i] = (
+                random.randint(0,255),
+                random.randint(0,255),
+                random.randint(0,255)
+            )
+        np.write()
+        time.sleep_ms(70)
+
+# game state
+TRIGGER_ANGLE = 125
+RETURN_DELAY  = 4500
+
+active = [False]*5
+return_time = [0]*5
+
+# press queue
+press_count = [0]*5
+
+win_latch = False
+
+# stability check variables
+stable_count = 0
+REQUIRED_STABLE = 3
+
+# servo controls
+def trigger_servo(i):
+    # optional limit (avoid overload)
+    press_count[i] = min(press_count[i] + 1, 5)
+
+# WiFi control
+def handle_app_request(params):
+    print("App:", params)
+
+    if params.get("servo"):
+        try:
+            num = int(params.get("servo"))
+            if 1 <= num <= 5:
+                trigger_servo(num-1)
+                return {"status": "Queued " + str(num)}
+        except:
+            pass
+
+    return {"status": "OK"}
+
+app.start_ap("kmehrawifi", "zxcvbnm78")
+app.on_request(handle_app_request)
+
+# continous sweep servo
+sweep_forward = True
+last_sweep_toggle = 0
+SWEEP_INTERVAL = 1000  # ms
+
+# MAIN LOOP
+while True:
+    now = time.ticks_ms()
+
+    try:
+        app.process()
+    except:
+        pass
+
+    # YAYY U WON!!!
+    if not win_latch:
+        dist = get_distance()
+
+        if dist is not None and 2 < dist < WIN_DISTANCE:
+            stable_count += 1
+        else:
+            stable_count = 0
+
+        if stable_count >= REQUIRED_STABLE:
+            win_latch = True
+            set_continuous(CONT_STOP)
+            celebrate()
+            clear()
+            np.write()
+
+    # Neopixel LED animation
+    if not win_latch:
+        rotating_red()
+
+    # Servo queue system
+    for i in range(5):
+
+        # Start movement if idle and queued
+        if not active[i] and press_count[i] > 0:
+            set_angle(servos[i], TRIGGER_ANGLE)
+            active[i] = True
+            return_time[i] = time.ticks_add(now, RETURN_DELAY)
+
+        # Finish movement
+        if active[i] and time.ticks_diff(return_time[i], now) <= 0:
+            set_angle(servos[i], 0)
+            servos[i].duty(0)
+            active[i] = False
+            press_count[i] -= 1
+
+    # Continuous servo
+    if not win_latch:
+        if time.ticks_diff(now, last_sweep_toggle) > SWEEP_INTERVAL:
+            sweep_forward = not sweep_forward
+            last_sweep_toggle = now
+
+        if sweep_forward:
+            set_continuous(CONT_FWD)
+        else:
+            set_continuous(CONT_REV)
+
+    time.sleep_ms(20)
+
+]
 ```
 
 ---
@@ -548,7 +745,7 @@ Include:
 | App | `[Khushi]` | `[Suksha]` |
 | Mechanical build | `[Khushi]` | 
 | Testing | `[Suksha]]` | `[Khushi]` |
-| Documentation | `[Khushi and suksha]` | 
+| Documentation | `[Khushi and Suksha]` | 
 
 ---
 
@@ -558,21 +755,21 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [yes ] Idea finalized
-- [yes ] Core interaction decided
-- [yes ] Sketches made
+- [yes] Idea finalized
+- [yes] Core interaction decided
+- [yes] Sketches made
 - [ ] BOM completed
-- [ yes] Purchase needs identified
-- [ yes] Key uncertainty identified
-- [ yes] Basic feasibility tested
+- [yes] Purchase needs identified
+- [yes] Key uncertainty identified
+- [yes] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
-- [yes ] Electronics tests completed
-- [ yes] CAD / structure planning completed
-- [yes ] App UI started if needed
-- [yes ] Mechanical concept tested
-- [ yes] Main subsystems partially working
+- [yes] Electronics tests completed
+- [yes] CAD / structure planning completed
+- [yes] App UI started if needed
+- [yes] Mechanical concept tested
+- [yes] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
