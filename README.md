@@ -542,13 +542,13 @@ Include:
 
 | Area | Main Owner | Support Owner |
 |---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Concept and gameplay | `[Khushi]` | `[Sukha]` |
+| Electronics | `[Khushi]` | `[Suksha]` |
+| Coding | `[Suksha]` | 
+| App | `[Khushi]` | 
+| Mechanical build | `[Khushi]` | 
+| Testing | `[Khushi]` | `[Suksha]` |
+| Documentation | `[Khushi]` | `[Suksha]` |
 
 ---
 
@@ -672,7 +672,11 @@ Include:
 - revisions.
 
 **Response:**  
-`[Write here]`
+`[The base structure was cut from pine wood to provide a sturdy foundation, while details and layered elements were made using coloured and transparent acrylic cut with a laser cutter. 3D printed parts were used for components like servo mounts and pin holders to ensure proper alignment. The system was assembled by fixing the servos onto the wooden frame and attaching threads from the servo arms to the pins.
+
+Fastening was done using adhesives and cable ties to keep all parts secure while still allowing small adjustments. Wiring involved connecting the servos, ultrasonic sensor, and NeoPixel strip to the ESP32 along with an external power supply, with careful routing to avoid interference with moving parts. Finishing included smoothing edges, aligning acrylic layers, and cleaning up the overall build.
+
+Several revisions were made to improve the pin mechanism—adjusting thread tension, servo angles, and alignment to reduce friction and prevent jamming during operation.]`
 
 ## 17.2 Build Photos
 Add photos throughout the project.
@@ -736,7 +740,7 @@ What slowed you down?
 How well did you manage time, tasks, and responsibilities?
 
 **Response:**  
-`[Write here]`
+`[The team worked well in dividing tasks between coding, electronics, and mechanical design, which helped progress happen in parallel. We communicated ideas clearly and adapted quickly when something didn’t work. However, integration slowed us down, especially when combining the app, hardware, and mechanics. Time management was generally effective, but more structured testing earlier could have reduced last-minute fixes]`
 
 ## 19.2 Technical Reflection
 What did you learn about:
@@ -759,20 +763,20 @@ What did you learn about:
 - iteration?
 
 **Response:**  
-`[Write here]`
+`[We learned that designing for play requires immediate feedback and simple interactions. Delight comes from combining physical movement, lights, and unpredictability. Clarity is important so users understand what each action does without explanation. Physical interaction made the experience more engaging compared to purely digital systems. Iteration was key, as small changes in timing, motion, or layout significantly improved usability and overall experience.]`
 
 ## 19.4 If You Had One More Week
 What would you improve next?
 
 **Response:**  
-`[Write here]`
+`[We learned how to connect and control multiple components like servos, sensors, and LEDs using the ESP32. In coding, we understood how to handle real-time inputs from an app and manage timing without blocking the system. Mechanically, we explored how motion from a servo can be translated into linear movement using threads and pins. In fabrication, precision and alignment were important to avoid jamming. Integration taught us that combining all systems is the most complex part and requires continuous testing and adjustment.]`
 
 ---
 
 # 20. Final Submission Checklist
 
 Before submission, confirm that:
-- [ ] Team details are complete
+- [YES] Team details are complete
 - [ ] Project description is complete
 - [ ] Inspiration sources are included
 - [ ] Player journey is written
