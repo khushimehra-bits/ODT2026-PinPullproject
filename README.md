@@ -75,7 +75,7 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[A game with several pins that need to pulled out using a web interface to make a coin/ several coins together go through and obstacle course down the correct shoot into the bucket which holds an ultra sonic sensor
+`[A game with several pins that need to pulled out using a web interface to make a coin/ several coins together go through and obstacle course down the correct shoot into the bucket which holds an ultra sonic sensor.
 It creates a fun and adrenaline filled game of chance.
 It is based partially on chance and partially on reflexes, the time sensitivity,   ]`
 
@@ -241,9 +241,9 @@ Include:
 | System Part | Type | What It Does |
 |---|---|---|
 | `[ App Input]` | Input | `[Sends]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| `[ESP32 / Controller]` | Processing | `[Receives signals, processes game logic, triggers servos, reads sensor data, and controls LEDs]` |
+| `[Servos + NeoPixel LEDs]` | Output | `[Servos pull pins to release coins; LEDs provide visual feedback and animations]` |
+| `[Mechanical Assembly]` | Physical Action | `[Pins, threads, and structure guide and release coins into the collection area]` |
 
 ---
 
@@ -257,6 +257,8 @@ Add an early sketch of the full idea.
 
 Example:
 ```md
+<img width="900" height="1600" alt="WhatsApp Image 2026-04-06 at 9 38 00 AM" src="https://github.com/user-attachments/assets/abdd497c-5059-4f62-9a8e-91ea276275da" />
+<img width="900" height="1600" alt="WhatsApp Image 2026-04-06 at 9 38 00 A" src="https://github.com/user-attachments/assets/09f5638d-8628-4a92-ab9e-76570855d001" />
 
 ```
 
