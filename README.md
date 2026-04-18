@@ -395,7 +395,7 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[The startuo starts with all the servos excpet the continous sweep servo in rest position. The continous sweep servo moves continously 125 degrees back and forth - this is to increase the difficulty of the game. The neopixel is also on during startup - it powers a red light going round and round the neopixel - it loops until the winner is decided. As shown in the flowchart, the initialization of the app also happens during runtime. Once the app is ready, the buttons correspond to the servos to be moved. The buttons are pressed to make the coins move in the path the player intends. The buttons cannot be pressed more than once - demanding higher awareness and planning from the player. Each time a button is pressed, the corresponding servo moves 90 degrees and pulls the pin attatched to it making the coins fall into a path. The Ultrasonic sensor senses coins as they fall into the path that determines if the player wins the game or not. As soon as the sensor senses coins falling into that path, it makes the neopixel change from red to flash green twice to signal the win and then it transforms into celbratory colors for a while and then resets the game. The reset means that the runtime is over and for the game to be played again, the code needs to be run again.]`
+`[The startup starts with all the servos excpet the continous sweep servo in rest position. The continous sweep servo moves continously 125 degrees back and forth - this is to increase the difficulty of the game. The neopixel is also on during startup - it powers a red light going round and round the neopixel - it loops until the winner is decided. As shown in the flowchart, the initialization of the app also happens during runtime. Once the app is ready, the buttons correspond to the servos to be moved. The buttons are pressed to make the coins move in the path the player intends. The buttons cannot be pressed more than once - demanding higher awareness and planning from the player. Each time a button is pressed, the corresponding servo moves 90 degrees and pulls the pin attatched to it making the coins fall into a path. The Ultrasonic sensor senses coins as they fall into the path that determines if the player wins the game or not. As soon as the sensor senses coins falling into that path, it makes the neopixel change from red to flash green twice to signal the win and then it transforms into celbratory colors for a while and then resets the game. The reset means that the runtime is over and for the game to be played again, the code needs to be run again.]`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -679,7 +679,7 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`[Pine wood instead of MDF because it would not hold the continuous movement happening through the game and also the MDF deteriorates with time.Arcylic is transparent.]`
+`[Pine wood instead of MDF because it would not hold the continuous movement happening through the game and also the MDF deteriorates with time. Arcylic is transparent.]`
 
 ## 12.3 Items to Purchase Separately
 
