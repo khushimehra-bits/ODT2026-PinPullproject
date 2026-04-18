@@ -58,8 +58,8 @@ Suksha and Khushi
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Khushi]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `[Suksha]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `[Khushi]` | `[Electronics / App / Fabrication / Mechanics]` | `[making the physical setup and app]` | `[Physical build of the setup and mechanics]` |
+| `[Suksha]` | `[Electronics / Coding]` | `[Coding and electronics]` | `[Coding prowess and troubleshooting]` |
 
 ## 1.3 Project Title
 `[Pull pin game]`
@@ -103,7 +103,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[Write here]`
+`[This project creates an interactive, arcade-like experience where players trigger mechanisms to release coins and aim to achieve a winning condition. The experience is fast, responsive, and visually engaging, combining physical movement with light feedback. The player should feel excitement, anticipation, and a sense of control while interacting with the system. The unpredictability of outcomes and the satisfying physical response encourage repeated attempts and playful experimentation.]`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -111,7 +111,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[Write here]`
+`[e are designing this project as if we are a small creative studio making an interactive game for a mixed audience of classmates and exhibition visitors, focusing on creating a playful, engaging, and easy-to-understand experience that invites quick participation and repeat interaction.]`
 
 ---
 
@@ -122,15 +122,15 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[[(https://poki.com/en/g/how-to-loot-pin-pull)]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `[Toy /App/ Website]` | `[[(https://poki.com/en/g/how-to-loot-pin-pull)]` | `[What did you learn or borrow?]` |
+| `[Toy / Game] '|['Coin pusher arcade machines	The idea of using coins, physical reward systems, and repeatable play for engagement.]'|
+|  '[Object]' | '[System	Servo-based mechanisms]' |	'[Using controlled mechanical movement to create precise, repeatable interactions.]` |
 
 ## 3.2 Original Twist
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+`[The project translates a digital pin-pull game into a physical, interactive system using servos, sensors, and real coins. It combines app-based control with tangible mechanics, adding unpredictability through real-world physics and feedback through lights and motion, making the experience more immersive and playful than its digital inspiration.]`
 
 ---
 
@@ -173,10 +173,10 @@ Describe exactly how a player will use the project.
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
-- `[Rule 3]`
-- `[win]`
+[Press one of the five buttons to trigger a corresponding pin (servo).]
+[Each pin releases coins into the system.]
+[Players can press buttons multiple times to influence the outcome.]
+[Win: When enough coins reach the target area (detected by the sensor), the game triggers a win response.]
 
 ---
 
@@ -185,12 +185,11 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
-- [ ] `[Condition 3]`
-- [ ] `[Condition 4]`
-- [ ] `[Condition 5]`
-
+- [ ] `[App successfully connects to the ESP32 via WiFi]
+- [ ]  '[Each button correctly triggers its corresponding servo]
+- [ ]  [Pins release coins reliably without jamming]
+- [ ]   [System detects a win condition using the sensor]
+- [ ]   [Visual feedback (NeoPixel lights) responds to gameplay]
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
@@ -305,7 +304,7 @@ Check all that apply.
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+`[The servo pulls a thread that is wrapped around a fixed axle and wheel that in turn pulls the pin to let the coins fall]`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -316,7 +315,7 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`[The servo arm rotates when triggered, pulling the thread that removes the pin. The motion is about 90 degrees, controlled by the servo’s programmed angle, and occurs over a few seconds for smooth release. The pin moves linearly outward, allowing coins to fall. The speed is moderate to ensure control and avoid jamming. Possible issues include thread slipping, servo not generating enough torque, or the pin getting stuck due to friction or misalignment.]`
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
@@ -341,8 +340,9 @@ What changed after the CAD, animation, or simulation stage?
 | Component | Quantity | Purpose |
 |---|---:|---|
 | `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `[Servo]` | `[6]` | `[control the obstacles of the game]` |
+| `[Ultra sonic sensor]` | `[1]` | `[senses the coins falling in the winning slot and sends a signal to the neopixel]` |
+| `[neopixel]` | `[1]` | `[Remains red until it recieves the signal from the ultra sonic and then turns green and after that a gradient in celebration ]` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
@@ -435,15 +435,13 @@ Examples:
 - displaying data.
 
 **Response:**  
-`[Write here]`
+`[Instead of having physical buttons and more wiring, it more convenient to have a different interface that makes the experience neater and better, Remote controlling]`
 
 ## 11.3 App Features
 
 | Feature | Purpose |
 |---|---|
-| `[Bluetooth connect button]` | `[Purpose]` |
-| `[Score display]` | `[Purpose]` |
-| `[Control button / slider / label]` | `[Purpose]` |
+| `[Buttons]` | `[Buttons pressed to make the servos move to pull the pins]` |
 
 ## 11.4 UI Mockup
 Insert a sketch or screenshot of the app interface.
@@ -451,12 +449,10 @@ Insert a sketch or screenshot of the app interface.
 **Insert image below:**  
 `[Upload image and link here]`
 
-## 11.5 App Screen Flow
-
-1. `[Step 1]`
-2. `[Step 2]`
-3. `[Step 3]`
-4. `[Step 4]`
+## 11.5 Connect: Join WiFi kmehrawifi
+[Control: Press buttons (Servo 1–5)
+Play: Servos move, game responds
+Reset: Win → reset game]
 
 ---
 
