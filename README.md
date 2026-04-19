@@ -1,3 +1,5 @@
+<img width="899" height="1302" alt="build sketch" src="https://github.com/user-attachments/assets/509ddb4a-0971-4bc8-93eb-6b0b41606a60" />
+<img width="899" height="1302" alt="build sketch" src="https://github.com/user-attachments/assets/52866e77-0eff-4e50-ae29-24d90297a5f1" />
 # Open Design and Technology  
 ## Final Project README
 
@@ -272,6 +274,8 @@ Add a sketch with labels showing:
 
 **Insert image below:**  
 `[Upload image and link here]`
+<img width="899" height="1302" alt="build sketch" src="https://github.com/user-attachments/assets/42890a6d-70bb-46e4-9b88-db61ddec8fcc" />
+
 
 ## 7.3 Approximate Dimensions
 
