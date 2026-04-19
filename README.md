@@ -65,7 +65,7 @@ Suksha and Khushi
 `[Pull pin game]`
 
 ## 1.4 One-Line Pitch
-`[A game where you have to drop coins through a maze by testing you reaction time]`
+`[A game where you have to drop coins through a maze by testing your decision making ability]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -1015,15 +1015,15 @@ Describe the final version of your project.
 
 
 ## 18.3 What Still Needs Improvement
-- `[Point 1]`
-- `[Point 2]`
+- `[To make the game reset automatically ]`
+- `[Make the pins move in a smooth motion]`
 - `[Point 3]`
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
 
 **Response:**  
-`[We had planned to use a lead sensor that did not work out and was replaced by an ultrasonic sensor. A few of the placement of the obstacles changed.]`
+`[We had planned to use a load sensor that did not work out and was replaced by an ultrasonic sensor. A few of the placement of the obstacles changed.]`
 
 ---
 
@@ -1046,7 +1046,7 @@ What did you learn about:
 - integration?
 
 **Response:**  
-`[Write here]`
+`[In electronics, we learned how to power and manage multiple components like servos, NeoPixels, and sensors using an ESP32, and the importance of a stable external power supply and common grounding. In coding, we understood how to handle real-time communication between the app and the ESP32.Mechanically, we explored how rotational motion from a servo can reliably translate into linear pin movement using threads, and how small alignment issues can cause failure. In fabrication, we learned that material choice and precision (especially with laser-cut acrylic and wood) directly affect performance and durability. Integration taught us that combining all systems is the most challenging part, requiring constant testing and adjustments to ensure everything works together smoothly in real time.]`
 
 ## 19.3 Design Reflection
 What did you learn about:
