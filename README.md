@@ -987,12 +987,10 @@ Suggested images:
 
 Example:
 ```md
-<img width="900" height="1600" alt="Progess picture 1" src="https://github.com/user-attachments/assets/aa5825ca-7258-48da-8243-b81741449e3e" />
-<img width="900" height="1600" alt="Progress pic 2" src="https://github.com/user-attachments/assets/5e686b32-0156-4af7-8c5c-4c141393f246" />
-
-
-
 ```
+
+<img width="900" height="1600" alt="Progess picture 1" src="https://github.com/user-attachments/assets/d1261fde-cecf-402f-8846-ae832fb6d367" />
+<img width="900" height="1600" alt="Progress pic 2" src="https://github.com/user-attachments/assets/31b5ec32-08ae-4676-bff5-8300ac6c7ae2" />
 
 ## 17.3 Version History
 
