@@ -279,7 +279,7 @@ Add a sketch with labels showing:
 |---|---|
 | Length | `[50cm]` |
 | Width | `[35cm]` |
-| Height | `[2]` |
+| Height | `[2cm]` |
 | Estimated weight | `[2kg]` |
 
 ---
@@ -331,7 +331,7 @@ If your project includes mechanical motion, document the digital planning before
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[Write here]`
+`[added a system with the servos to pull a thread wrapped around a cylinder to create tension and pull it straight out]`
 
 ---
 
@@ -742,6 +742,7 @@ Insert a sketch or screenshot of the app interface.
 
 **Insert image below:**  
 `[Upload image and link here]`
+<img width="573" height="751" alt="app UI" src="https://github.com/user-attachments/assets/615c4fa8-1fa4-4268-9632-1e173e77d140" />
 
 ## 11.5 Connect: Join WiFi kmehrawifi
 [Control: Press buttons (Servo 1–5)
@@ -777,7 +778,7 @@ Examples:
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[Servo]` | `[]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
 | `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
 
 ## 12.4 Budget Summary
@@ -822,14 +823,14 @@ Include:
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| T1 | `[Finalize concept]` | `[Khushi and suksha]` | `2` | `[30th march]` | `None` | `Done` |
+| T2 | `[Complete BOM]` | `[Khushi and Suksha]` | `1` | `[6th april]` | `T1` | `Done` |
+| T3 | `[Test electronics]` | `[Khushi]` | `2` | `[Date]` | `T1` | `Done` |
+| T4 | `[Build structure]` | `[Khushi]` | `4` | `[Date]` | `T1` | `Done` |
+| T5 | `[Write control code]` | `[Suksha]` | `4` | `[Date]` | `T3` | `Done` |
+| T6 | `[Integrate system]` | `[Khushi and Suksha]` | `4` | `[Date]` | `T4, T5` | `Done` |
+| T7 | `[Playtest]` | `[Khushi and Suksha]` | `2` | `[Date]` | `T6` | `Done` |
+| T8 | `[Refine and document]` | `[Khushi and suksha]` | `3` | `[20th april]` | `T7` | `Done` |
 
 ## 13.3 Responsibility Split
 
@@ -909,7 +910,7 @@ Expected outcomes:
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-`[Write here]`
+`[The pulling out of the pins in a straight line]`
 
 ---
 
@@ -919,8 +920,8 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing | How You Will Test It | Success Condition |
 |---|---|---|
-| `[Bluetooth connection]` | `[Method]` | `[What counts as success?]` |
-| `[Mechanism movement]` | `[Method]` | `[What counts as success?]` |
+| `[WiFi connection (ESP32 + app)]` | `[Connect phone to ESP32 hotspot and send commands via browser/app]` | `[Servos respond immediately without disconnection]` |
+| `[Mechanism movement]` | `[Trigger each servo multiple times]` | `[Pins move smoothly and release coins without jamming]` |
 | `[Sensor behavior]` | `[Method]` | `[What counts as success?]` |
 | `[App communication]` | `[Method]` | `[What counts as success?]` |
 
