@@ -1,4 +1,4 @@
-![Uploading Flow chart code.jpeg…]()
+
 # Open Design and Technology  
 ## Final Project README
 
