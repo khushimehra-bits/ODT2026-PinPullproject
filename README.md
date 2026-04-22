@@ -1,3 +1,4 @@
+![Uploading Flow chart code.jpeg…]()
 # Open Design and Technology  
 ## Final Project README
 
@@ -356,7 +357,8 @@ Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
 `[Upload image and link here]`
-<img width="900" height="1600" alt="Circuit diagram " src="https://github.com/user-attachments/assets/b972c3f6-b574-4b47-9437-a62f9208e79b" />
+<img width="998" height="877" alt="Circuit diagram 1" src="https://github.com/user-attachments/assets/4341e43c-6e6c-42f0-ba5b-d469c76c047b" />
+
 
 
 ## 9.4 Power Plan
@@ -465,7 +467,7 @@ Insert a sketch or screenshot of the app interface.
 
 **Insert image below:**  
 `[Upload image and link here]`
-<img width="573" height="751" alt="app UI" src="https://github.com/user-attachments/assets/615c4fa8-1fa4-4268-9632-1e173e77d140" />
+<img width="1909" height="911" alt="UI" src="https://github.com/user-attachments/assets/00ae150d-6836-4765-bbe3-6d5f071f99d1" />
 
 ## 11.5 Connect: Join WiFi kmehrawifi
 [Control: Press buttons (Servo 1–5)
@@ -564,10 +566,10 @@ Include:
 |---|---|---|
 | Concept and gameplay | `[Khushi and Suksha]` |
 | Electronics | `[Khushi and Suksha]` |
-| Coding | `[Suksha]` | `[Khushi]` |
-| App | `[Khushi]` | `[Suksha]` |
+| Coding | `[Suksha and Khushi]` |
+| App | `[Khushi]` |
 | Mechanical build | `[Khushi]` | 
-| Testing | `[Suksha]]` | `[Khushi]` |
+| Testing | `[Khushi and Suksha]]` |
 | Documentation | `[Khushi and Suksha]` | 
 
 ---
@@ -666,14 +668,11 @@ What is the single biggest uncertainty in your project at this stage?
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
 
-| []  | Servo rotates in an arc but mechanism requires straight linear motion | Mechanical| Tried adjusting servo horn position and linkage geometry | Partly | Redesign to convert rotation to linear motion (slider / lever) |
-|[]  | Servo not moving or jittering | Technical      | Checked wiring, corrected PWM pins and power supply | Worked | Stabilize power using external supply if needed |
-|[]  | Servo moving in wrong direction | Technical| Used invert logic in code (`angle = 180 - angle`)| Worked |'[Use same logic for all servos]'|
-|[]  | Servo not returning to original position | Technical  | Added return delay logic using `time.ticks_ms()`| Worked |  delay timing |
-|[] | Multiple servos moving together unintentionally| Technical | Added active state tracking and debugging prints                     | Partly | Implement proper locking system |
-|[] | Servo triggers stacking when multiple buttons pressed | Technical / UI | Limited trigger conditions and checked app input handling            | Partly | Add strict servo lock (only one at a time)  |
-|[] | Servo moving in wrong direction (specific pins)| Technical      | Adjusted invert array per servo pin                                  | Worked | Document pin-direction mapping clearly  |
-| [] | Servo resets to 0 instead of continuing from last position | Technical | Introduced `current_angle` tracking | Partly | Improve smooth relative movement  |
+| [7th april]  | Servo rotates in an arc but mechanism requires straight linear motion | Mechanical| Tried adjusting servo horn position and linkage geometry | Partly | Redesign to convert rotation to linear motion (slider / lever) |
+|[9th paril]  | Servo not moving or jittering | Technical      | Checked wiring, corrected PWM pins and power supply | Worked | Stabilize power using external supply if needed |
+|[10th april]  | Servo moving in wrong direction | Technical| Used invert logic in code (`angle = 180 - angle`)| Worked |'[Use same logic for all servos]'|
+|[11th april]  | Servo not returning to original position | Technical  | Added return delay logic using `time.ticks_ms()`| Worked |  delay timing |
+|[15th april] | Servo moving in wrong direction (specific pins)| Technical | Adjusted invert array per servo pin                                  | Worked | Document pin-direction mapping clearly|
 |[18th april] | False win detection due to noisy distance values| Gameplay  | Introduced `stable_count` logic | Worked | Adjust threshold for sensitivity|
 | [18th april] | Neopixel animation interfering with timing | Technical| Reduced blocking delays and optimized loop | Worked | Possibly move to non-blocking animations|
 | [18th april] | Continuous servo not stopping correctly | Technical | changed value of stop PWM value (`CONT_STOP`)  | Worked | Calibrate again if needed |
@@ -736,7 +735,7 @@ Example:
 | `v1` | `[10th april]` | `[Servos moving but with no calibration.Is able to pull the weight of the pin ]` | `[Weight testing in order to see if correct material was being used. ]` |
 | `v2` | `[15th april]` | `[Physical model done with holes drilled for servos to sit in. Load sensor had to replaced with a ultrasonic sensor]` | `[Load sensor wasnt calibrating.The servo position was finalised ]` |
 | `v3` | `[19th april]` | `[Fully assembled except for the top piece ]` | `[No changes can be made after top piece is attached.]` |
-
+| `v4` | `[22th april]` | `[Changed mechanism and physical setup ]` | `[didnt work before.]` |
 ---
 
 # 18. Final Outcome
@@ -750,13 +749,14 @@ Describe the final version of your project.
 ## 18.2 What Works Well
 `[Reliable WiFi communication between the app and ESP32 for real-time control]
 [Smooth and responsive servo-triggered pin mechanism for coin release]
-[Engaging visual feedback through NeoPixel animations and win celebration]`
+
 
 
 ## 18.3 What Still Needs Improvement
 - `[To make the game reset automatically ]`
 - `[Make the signal sensor more immediate]`
-  
+- `[Make the mechanism smoother ]`
+    
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
@@ -823,9 +823,9 @@ Before submission, confirm that:
 - [YES] App planning is documented if applicable
 - [YES] Code flowchart is added
 - [YES] Task breakdown is complete
-- [ ] Weekly logs are updated
-- [ ] Risk register is complete
-- [ ] Testing log is updated
+- [YES] Weekly logs are updated
+- [YES ] Risk register is complete
+- [YES ] Testing log is updated
 - [YES] Playtesting notes are included
 - [YES] Build photos are included
 - [YES] Final reflection is written
